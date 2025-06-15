@@ -47,7 +47,7 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our <span className="text-blue-600">Services</span>
+            Our <span className="text-purple-600">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We offer comprehensive dental care using the latest technology and techniques 
@@ -65,8 +65,8 @@ const Services = () => {
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
               >
                 <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                    <IconComponent className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                    <IconComponent className="w-8 h-8 text-purple-600" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -78,12 +78,12 @@ const Services = () => {
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-gray-700">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <button className="mt-6 w-full bg-blue-600 text-white py-3 rounded-full hover:bg-blue-700 transition-colors duration-200 font-semibold">
+                <button className="mt-6 w-full bg-purple-600 text-white py-3 rounded-full hover:bg-purple-700 transition-colors duration-200 font-semibold">
                   Learn More
                 </button>
               </div>
@@ -93,16 +93,16 @@ const Services = () => {
 
         {/* CTA Section */}
         <div className="mt-16 text-center">
-          <div className="bg-blue-600 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
+          <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Transform Your Smile?
             </h3>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-purple-100">
               Schedule your consultation today and discover what we can do for you.
             </p>
             <a
               href="#contact"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block"
+              className="bg-white text-purple-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block"
             >
               Book Your Appointment
             </a>
