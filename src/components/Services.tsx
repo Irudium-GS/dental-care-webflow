@@ -1,9 +1,11 @@
 
 import { Stethoscope, Sparkles, Smile, AlertTriangle, Baby, Wrench } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
     {
+      id: 'general-dentistry',
       icon: Stethoscope,
       title: "General Dentistry",
       description: "Comprehensive oral care including cleanings, fillings, and preventive treatments under our gentle moonlight approach",
@@ -11,6 +13,7 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop"
     },
     {
+      id: 'cosmetic-dentistry',
       icon: Sparkles,
       title: "Cosmetic Dentistry",
       description: "Transform your smile with our advanced cosmetic procedures that shine as bright as moonbeams",
@@ -18,6 +21,7 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1606811841689-23dfdb7ee46c?w=400&h=300&fit=crop"
     },
     {
+      id: 'orthodontics',
       icon: Smile,
       title: "Orthodontics",
       description: "Straighten your teeth with traditional braces or modern clear aligners in our serene environment",
@@ -25,6 +29,7 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&h=300&fit=crop"
     },
     {
+      id: 'emergency-care',
       icon: AlertTriangle,
       title: "Emergency Care",
       description: "24/7 immediate dental care when you need it most, available under the moonlight",
@@ -32,6 +37,7 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&h=300&fit=crop"
     },
     {
+      id: 'pediatric-dentistry',
       icon: Baby,
       title: "Pediatric Dentistry",
       description: "Gentle, specialized care for children in our magical moonlight setting",
@@ -39,6 +45,7 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop"
     },
     {
+      id: 'dental-implants',
       icon: Wrench,
       title: "Dental Implants",
       description: "Permanent solution for missing teeth with natural-looking results that glow",
@@ -48,7 +55,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-br from-[#ccccff]/30 to-white relative overflow-hidden">
+    <section id="services" className="py-20 bg-gradient-to-br from-[#ccccff]/30 to-[#a3a3cc]/30 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 right-10 w-64 h-64 bg-[#5c5c99] rounded-full blur-3xl"></div>
@@ -78,7 +85,7 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 group border border-[#ccccff]/50"
+                className="bg-gradient-to-br from-[#ccccff]/80 to-[#a3a3cc]/60 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 group border border-[#ccccff]/50"
               >
                 {/* Service Image */}
                 <div className="relative h-48 overflow-hidden">
@@ -108,9 +115,12 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full bg-gradient-to-r from-[#5c5c99] to-[#292966] text-white py-3 rounded-full hover:shadow-lg transition-all duration-300 font-semibold group-hover:from-[#292966] group-hover:to-[#5c5c99]">
+                  <Link
+                    to={`/services/${service.id}`}
+                    className="w-full bg-gradient-to-r from-[#5c5c99] to-[#292966] text-white py-3 rounded-full hover:shadow-lg transition-all duration-300 font-semibold group-hover:from-[#292966] group-hover:to-[#5c5c99] block text-center"
+                  >
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               </div>
             );
