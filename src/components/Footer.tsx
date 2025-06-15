@@ -38,81 +38,59 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-6 text-gray-900">Quick Links</h4>
-            <ul className="space-y-3">
-              <li>
-                <a href="#home" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#testimonials" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  Contact
-                </a>
-              </li>
-            </ul>
+            <div className="space-y-3">
+              <a href="#home" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                Home
+              </a>
+              <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                Services
+              </a>
+              <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                About Us
+              </a>
+              <a href="#testimonials" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                Testimonials
+              </a>
+              <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                Contact
+              </a>
+            </div>
           </div>
 
           {/* Services */}
           <div>
             <h4 className="text-lg font-semibold mb-6 text-gray-900">Our Services</h4>
-            <ul className="space-y-3">
-              <li>
-                <span className="text-gray-600 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  General Dentistry
-                </span>
-              </li>
-              <li>
-                <span className="text-gray-600 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  Cosmetic Dentistry
-                </span>
-              </li>
-              <li>
-                <span className="text-gray-600 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  Orthodontics
-                </span>
-              </li>
-              <li>
-                <span className="text-gray-600 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  Emergency Care
-                </span>
-              </li>
-              <li>
-                <span className="text-gray-600 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  Pediatric Dentistry
-                </span>
-              </li>
-              <li>
-                <span className="text-gray-600 flex items-center">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                  Dental Implants
-                </span>
-              </li>
-            </ul>
+            <div className="space-y-3">
+              <span className="text-gray-600 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                General Dentistry
+              </span>
+              <span className="text-gray-600 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                Cosmetic Dentistry
+              </span>
+              <span className="text-gray-600 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                Orthodontics
+              </span>
+              <span className="text-gray-600 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                Emergency Care
+              </span>
+              <span className="text-gray-600 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                Pediatric Dentistry
+              </span>
+              <span className="text-gray-600 flex items-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                Dental Implants
+              </span>
+            </div>
           </div>
 
           {/* Contact Info */}
