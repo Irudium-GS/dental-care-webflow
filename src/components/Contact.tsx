@@ -37,14 +37,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Book Your <span className="text-blue-600">Appointment</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Book Your <span className="text-blue-400">Appointment</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
             Ready to start your journey to a healthier, more beautiful smile? 
             Contact us today to schedule your consultation.
           </p>
@@ -53,49 +53,49 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Get In Touch</h3>
+            <h3 className="text-2xl font-bold text-white mb-8">Get In Touch</h3>
             
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 p-3 rounded-full">
-                  <Phone className="w-6 h-6 text-blue-600" />
+                <div className="bg-blue-500/20 p-3 rounded-full border border-blue-400/30">
+                  <Phone className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Phone</h4>
-                  <p className="text-gray-600">(555) 123-4567</p>
-                  <p className="text-sm text-gray-500">Call for immediate assistance</p>
+                  <h4 className="font-semibold text-white">Phone</h4>
+                  <p className="text-blue-100">(555) 123-4567</p>
+                  <p className="text-sm text-blue-300">Call for immediate assistance</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 p-3 rounded-full">
-                  <Mail className="w-6 h-6 text-blue-600" />
+                <div className="bg-blue-500/20 p-3 rounded-full border border-blue-400/30">
+                  <Mail className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">info@smilecare.com</p>
-                  <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
+                  <h4 className="font-semibold text-white">Email</h4>
+                  <p className="text-blue-100">info@smilecare.com</p>
+                  <p className="text-sm text-blue-300">We'll respond within 24 hours</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 p-3 rounded-full">
-                  <MapPin className="w-6 h-6 text-blue-600" />
+                <div className="bg-blue-500/20 p-3 rounded-full border border-blue-400/30">
+                  <MapPin className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Location</h4>
-                  <p className="text-gray-600">123 Smile Street<br />Dental City, DC 12345</p>
-                  <p className="text-sm text-gray-500">Free parking available</p>
+                  <h4 className="font-semibold text-white">Location</h4>
+                  <p className="text-blue-100">123 Smile Street<br />Dental City, DC 12345</p>
+                  <p className="text-sm text-blue-300">Free parking available</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 p-3 rounded-full">
-                  <Clock className="w-6 h-6 text-blue-600" />
+                <div className="bg-blue-500/20 p-3 rounded-full border border-blue-400/30">
+                  <Clock className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Hours</h4>
-                  <div className="text-gray-600">
+                  <h4 className="font-semibold text-white">Hours</h4>
+                  <div className="text-blue-100">
                     <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
                     <p>Saturday: 9:00 AM - 4:00 PM</p>
                     <p>Sunday: Emergency Only</p>
@@ -105,23 +105,23 @@ const Contact = () => {
             </div>
 
             {/* Map Placeholder */}
-            <div className="mt-8 bg-gray-100 rounded-2xl p-8 text-center">
+            <div className="mt-8 bg-slate-800/50 rounded-2xl p-8 text-center border border-blue-400/20">
               <div className="text-4xl mb-4">🗺️</div>
-              <h4 className="font-semibold text-gray-900 mb-2">Interactive Map</h4>
-              <p className="text-gray-600">
+              <h4 className="font-semibold text-white mb-2">Interactive Map</h4>
+              <p className="text-blue-100">
                 Easy to find location with ample parking and public transit access
               </p>
             </div>
           </div>
 
           {/* Appointment Form */}
-          <div className="bg-gray-50 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Schedule Appointment</h3>
+          <div className="bg-slate-800/50 rounded-3xl p-8 border border-blue-400/20">
+            <h3 className="text-2xl font-bold text-white mb-6">Schedule Appointment</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-blue-100 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -131,12 +131,12 @@ const Contact = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200 text-white placeholder-blue-300"
                     placeholder="Your full name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-blue-100 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -146,7 +146,7 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200 text-white placeholder-blue-300"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -154,7 +154,7 @@ const Contact = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-blue-100 mb-2">
                     Phone Number *
                   </label>
                   <input
@@ -164,12 +164,12 @@ const Contact = () => {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200 text-white placeholder-blue-300"
                     placeholder="(555) 123-4567"
                   />
                 </div>
                 <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="service" className="block text-sm font-medium text-blue-100 mb-2">
                     Service Needed
                   </label>
                   <select
@@ -177,7 +177,7 @@ const Contact = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200 text-white"
                   >
                     <option value="">Select a service</option>
                     <option value="consultation">Initial Consultation</option>
@@ -193,7 +193,7 @@ const Contact = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="date" className="block text-sm font-medium text-blue-100 mb-2">
                     Preferred Date
                   </label>
                   <input
@@ -202,11 +202,11 @@ const Contact = () => {
                     name="date"
                     value={formData.date}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200 text-white"
                   />
                 </div>
                 <div>
-                  <label htmlFor="time" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="time" className="block text-sm font-medium text-blue-100 mb-2">
                     Preferred Time
                   </label>
                   <select
@@ -214,7 +214,7 @@ const Contact = () => {
                     name="time"
                     value={formData.time}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200 text-white"
                   >
                     <option value="">Select time</option>
                     <option value="morning">Morning (8AM - 12PM)</option>
@@ -225,7 +225,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-blue-100 mb-2">
                   Additional Message
                 </label>
                 <textarea
@@ -234,14 +234,14 @@ const Contact = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200 text-white placeholder-blue-300"
                   placeholder="Tell us more about your needs or any questions you have..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg hover:bg-blue-700 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center space-x-2"
+                className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-4 px-6 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center space-x-2"
               >
                 <Calendar className="w-5 h-5" />
                 <span>Book Appointment</span>
